@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #222;
+  line-height: 1.7;
+}
+
+/* MENU */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 14px 20px;
+  background: white;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+  color: #0b5d6b;
+}
+
+nav a {
+  margin-left: 14px;
+  color: #222;
+  text-decoration: none;
+}
+
+#themeBtn {
+  background: none;
+  border: 1px solid #0b5d6b;
+  border-radius: 20px;
+  padding: 4px 10px;
+  cursor: pointer;
+  margin-left: 14px;
+  font-size: 16px;
+}
+
+/* HERO */
+.hero {
+  background: #0b5d6b;
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
+  max-width: 100%;
+}
+
+.hero h1 {
+  font-size: 38px;
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+.hero .small {
+  font-size: 16px;
+  margin-top: 4px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #ffc93c;
+  color: #222;
+  padding: 10px 26px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* PROFILE PICTURE CIRCLE */
+.photo-box {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto 16px auto;
+  position: relative;
+  overflow: hidden;
+  background: #7fd6e3;
+  border: 4px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-box span {
+  font-size: 48px;
+  font-weight: bold;
+  color: #0b5d6b;
+}
+
+.photo-box .photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* SECTIONS */
+section {
+  padding: 55px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.light {
+  max-width: 100%;
+  background: #eef6f7;
+}
+
+.light > * {
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  color: #0b5d6b;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #ffc93c;
+  display: inline-block;
+}
+
+/* SKILLS */
+.tags span {
+  display: inline-block;
+  background: white;
+  border: 1px solid #0b5d6b;
+  color: #0b5d6b;
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin: 4px;
+}
+
+/* BOXES */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.box {
+  background: white;
+  border: 1px solid #cfe3e6;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 14px;
+}
+
+.date {
+  color: #666;
+  font-size: 14px;
+}
+
+.box a, #contact a {
+  color: #0b5d6b;
+}
+
+/* CONTACT FORM */
+#contactForm {
+  margin-top: 20px;
+  max-width: 420px;
+}
+
+#contactForm input,
+#contactForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+}
+
+#contactForm button {
+  background: #0b5d6b;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#formMsg {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+footer {
+  background: #0b2227;
+  color: #ccc;
+  text-align: center;
+  padding: 24px;
+}
+
+/* DARK MODE */
+body.dark {
+  background: #121c1f;
+  color: #eee;
+}
+
+body.dark header {
+  background: #1b2a2e;
+}
+
+body.dark nav a,
+body.dark .logo {
+  color: #eee;
+}
+
+body.dark #themeBtn {
+  color: #eee;
+  border-color: #7fd6e3;
+}
+
+body.dark .light {
+  background: #182428;
+}
+
+body.dark .box,
+body.dark .tags span {
+  background: #1f2f34;
+  color: #eee;
+  border-color: #35525a;
+}
+
+body.dark h2 {
+  color: #7fd6e3;
+}
+
+body.dark .box a,
+body.dark #contact a {
+  color: #7fd6e3;
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .hero h1 {
+    font-size: 28px;
+  }
+}

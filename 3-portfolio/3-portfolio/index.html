@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Musa Khan | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- MENU -->
+  <header>
+    <div class="logo">Musa Khan</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button id="themeBtn">🌙</button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <!-- PROFILE PICTURE: put your photo named profile.jpg in this same folder -->
+    <div class="photo-box">
+      <span>MK</span>
+      <img class="photo" src="profile.jpg" alt="Musa Khan" onerror="this.style.display='none'">
+    </div>
+    <h1>Musa Khan</h1>
+    <p>Web and App Developer</p>
+    <p class="small">BS Computer Science Student | Lasbela University of Agriculture, Water and Marine Sciences</p>
+    <a class="btn" href="#contact">Contact me</a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About me</h2>
+    <p>I am Musa Khan, a BS Computer Science student in the 4th semester at Lasbela University of Agriculture, Water and Marine Sciences. I build websites and mobile apps. I like learning new technology and turning ideas into working projects.</p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="light">
+    <h2>Skills</h2>
+    <div class="tags">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Responsive Design</span>
+      <span>Web Development</span>
+      <span>App Development</span>
+      <span>GitHub</span>
+      <span>Problem Solving</span>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="box">
+      <h3>Web Developer (Practice Projects)</h3>
+      <p class="date">2026 - Present</p>
+      <p>Built a landing page, a login system with validation, and an inventory management page using HTML, CSS and JavaScript.</p>
+    </div>
+    <div class="box">
+      <h3>Student, BS Computer Science</h3>
+      <p class="date">Lasbela University of Agriculture, Water and Marine Sciences | 4th Semester</p>
+      <p>Learning programming, web development and problem solving.</p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="light">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="box">
+        <h3>Product Landing Page</h3>
+        <p>Responsive page with Hero, Features, Pricing and Call-to-Action.</p>
+        <a href="https://github.com/sangatweb-Developer/web-exam-projects/tree/main/1-landing-page">View on GitHub</a>
+      </div>
+      <div class="box">
+        <h3>Secure Login System</h3>
+        <p>Signup and login. One email can create only one account.</p>
+        <a href="https://github.com/sangatweb-Developer/web-exam-projects">View on GitHub</a>
+      </div>
+      <div class="box">
+        <h3>Inventory Manager</h3>
+        <p>Add, edit, delete and search products.</p>
+        <a href="https://github.com/sangatweb-Developer/web-exam-projects">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:musamengalofficial@gmail.com">musamengalofficial@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/sangatweb-Developer">github.com/sangatweb-Developer</a></p>
+
+    <form id="contactForm">
+      <input type="text" id="cname" placeholder="Your name">
+      <input type="text" id="cemail" placeholder="Your email">
+      <textarea id="cmessage" rows="4" placeholder="Your message"></textarea>
+      <button type="submit">Send message</button>
+      <p id="formMsg"></p>
+    </form>
+  </section>
+
+  <footer>© <span id="year"></span> Musa Khan. All rights reserved.</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
